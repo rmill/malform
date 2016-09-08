@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <!--
+         Stamp | Zen Themes
+
+         Release Date: Feb 1st, 2014
+         Last Update: May 9th, 2016
+
+         -->
+      <title>{Title}{block:SearchPage} ({lang:Search results for SearchQuery}){/block:SearchPage}{block:PermalinkPage}{block:PostSummary} — {PostSummary}{/block:PostSummary}{/block:PermalinkPage}</title>
+      {block:Description}
+      <meta name="description" content="{MetaDescription}">
+      {/block:Description}
+      <link rel="alternate" type="application/rss+xml" href="{RSS}">
+      <link rel="shortcut icon" href="{favicon}">
+      {block:hidden}
+      <meta name="image:Logo" content=""/>
+      <meta name="image:Background" content=""/>
+      <meta name="color:Background" content="#ffffff"/>
+      <meta name="color:Links" content="#1b4f7e"/>
+      <meta name="color:Links Hover" content="#0b253d"/>
+      <meta name="color:Dividers" content="#eeeeee"/>
+      <meta name="color:Blog Title" content="#555555"/>
+      <meta name="color:Navigation links" content="#666666"/>
+      <meta name="color:Navigation links Hover" content="#aaaaaa"/>
+      <meta name="color:Description" content="#888888"/>
+      <meta name="color:Post Text" content="#777777"/>
+      <meta name="color:Post Title" content="#555555"/>
+      <meta name="color:Post Dividers" content="#eeeeee"/>
+      <meta name="color:Photo Gradient Top" content="#1b4f7e"/>
+      <meta name="color:Photo Gradient Bottom" content="#000000"/>
+      <meta name="color:Photo Overlay Text" content="#ffffff"/>
+      <meta name="if:Repeat Background" content="1"/>
+      <meta name="if:Reversed Logo Fade" content="1"/>
+      <meta name="if:Limit Container Width" content="0"/>
+      <meta name="if:Sidebar Fixed" content="1"/>
+      <meta name="if:Sidebar Aligned Middle" content="1"/>
+      <meta name="if:Sidebar at Right" content="0"/>
+      <meta name="if:Blog Title Decoration" content="1"/>
+      <meta name="if:Social Icon Decoration" content="0"/>
+      <meta name="if:Uppercase Blog Title" content="1"/>
+      <meta name="if:Uppercase Navigation Links" content="1"/>
+      <meta name="if:Hide Description" content="0"/>
+      <meta name="if:Hide Post Notes" content="0"/>
+      <meta name="if:Show To Top Button" content="1"/>
+      <meta name="if:Show Archive Link" content="1"/>
+      <meta name="if:Show Random Link" content="0"/>
+      <meta name="if:Show RSS Link" content="0"/>
+      <meta name="if:Show Credit" content="1"/>
+      <meta name="if:Hover Style 1" content="1"/>
+      <meta name="if:Hover Style 2" content="0"/>
+      <meta name="if:Post Rounded" content="0"/>
+      <meta name="if:Photo Captions" content="0"/>
+      <meta name="if:Infinite Scrolling" contet="1"/>
+      <meta name="select:Layout" content="l-h" title="Header">
+      <meta name="select:Layout" content="l-s" title="Sidebar">
+      <meta name="select:Sidebar Text Aligned" content="left" title="Left"/>
+      <meta name="select:Sidebar Text Aligned" content="center" title="Center"/>
+      <meta name="select:Sidebar Text Aligned" content="right" title="Right"/>
+      <meta name="select:Title Font" content="Droid Sans" title="Droid Sans"/>
+      <meta name="select:Title Font" content="Abel" title="Abel"/>
+      <meta name="select:Title Font" content="Alegreya Sans" title="Alegreya Sans"/>
+      <meta name="select:Title Font" content="Arial" title="Arial"/>
+      <meta name="select:Title Font" content="courier new" title="Courier"/>
+      <meta name="select:Title Font" content="Domine" title="Domine"/>
+      <meta name="select:Title Font" content="Georgia" title="Georgia"/>
+      <meta name="select:Title Font" content="helvetica" title="Helvetica"/>
+      <meta name="select:Title Font" content="helvetica neue" title="Helvetica Neue"/>
+      <meta name="select:Title Font" content="Karla" Title="Karla"/>
+      <meta name="select:Title Font" content="Mako" title="Mako"/>
+      <meta name="select:Title Font" content="Montserrat" title="Montserrat"/>
+      <meta name="select:Title Font" content="Noto Sans" title="Noto Sans"/>
+      <meta name="select:Title Font" content="PT Mono" title="PT Mono"/>
+      <meta name="select:Title Font" content="Raleway" title="Raleway"/>
+      <meta name="select:Title Font" content="Roboto Slab" title="Roboto Slab"/>
+      <meta name="select:Title Font" content="Ropa Sans" title="Ropa Sans"/>
+      <meta name="select:Title Font" content="Rokkitt" title="Rokkitt"/>
+      <meta name="select:Title Font" content="Source Sans Pro" title="Source Sans Pro"/>
+      <meta name="select:Title Font" content="Times New Roman" title="Times New Roman"/>
+      <meta name="select:Body Font" content="helvetica neue" title="Helvetica Neue"/>
+      <meta name="select:Body Font" content="Abel" title="Abel"/>
+      <meta name="select:Body Font" content="Alegreya Sans" title="Alegreya Sans"/>
+      <meta name="select:Body Font" content="Arial" title="Arial"/>
+      <meta name="select:Body Font" content="courier new" title="Courier"/>
+      <meta name="select:Body Font" content="Domine" title="Domine"/>
+      <meta name="select:Body Font" content="Droid Sans" title="Droid Sans"/>
+      <meta name="select:Body Font" content="Georgia" title="Georgia"/>
+      <meta name="select:Body Font" content="helvetica" title="Helvetica"/>
+      <meta name="select:Body Font" content="Karla" Title="Karla"/>
+      <meta name="select:Body Font" content="Mako" title="Mako"/>
+      <meta name="select:Body Font" content="Montserrat" title="Montserrat"/>
+      <meta name="select:Body Font" content="Noto Sans" title="Noto Sans"/>
+      <meta name="select:Body Font" content="PT Mono" title="PT Mono"/>
+      <meta name="select:Body Font" content="Raleway" title="Raleway"/>
+      <meta name="select:Body Font" content="Roboto Slab" title="Roboto Slab"/>
+      <meta name="select:Body Font" content="Rokkitt" title="Rokkitt"/>
+      <meta name="select:Body Font" content="Ropa Sans" title="Ropa Sans"/>
+      <meta name="select:Body Font" content="Source Sans Pro" title="Source Sans Pro"/>
+      <meta name="select:Body Font" content="Times New Roman" title="Times New Roman"/>
+      <meta name="select:Post Width" content="default" Title="Default"/>
+      <meta name="select:Post Width" content="width-x-tiny" Title="Extra Tiny"/>
+      <meta name="select:Post Width" content="width-tiny" Title="Tiny"/>
+      <meta name="select:Post Width" content="width-small" Title="Small"/>
+      <meta name="select:Post Width" content="width-medium" Title="Medium"/>
+      <meta name="select:Post Width" content="width-large" Title="Large"/>
+      <meta name="select:Post Width" content="width-huge" Title="Huge"/>
+      <meta name="select:Post Width" content="width-x-huge" Title="Extra Huge"/>
+      <meta name="select:Post Margin" content="default" Title="Default"/>
+      <meta name="select:Post Margin" content="margin-xtra-tiny" title="5px">
+      <meta name="select:Post Margin" content="margin-tiny" Title="10px"/>
+      <meta name="select:Post Margin" content="margin-small" Title="20px"/>
+      <meta name="select:Post Margin" content="margin-medium" Title="30px"/>
+      <meta name="select:Post Margin" content="margin-large" Title="40px"/>
+      <meta name="select:Post Margin" content="margin-huge" Title="50px"/>
+      <meta name="select:Post Margin" content="margin-xtra-huge" title="60px"/>
+      <meta name="text:Limited Container Width" content="1210"/>
+      <meta name="text:Ask Link Title" content="Message"/>
+      <meta name="text:Submit Link Title" content="Submit"/>
+      <meta name="text:Archive Link title" content="Archive"/>
+      <meta name="text:Instagram Feed Title" content="Instagram Feed"/>
+      <meta name="text:Instagram Feed ID" content=""/>
+      <meta name="text:Instagram Feed Access Token" content=""/>
+      <meta name="text:Photo Overlay Opacity" content="70"/>
+      <meta name="text:Custom Link 1" content=""/>
+      <meta name="text:Custom Link 1 Title" content=""/>
+      <meta name="text:Custom Link 2" content=""/>
+      <meta name="text:Custom Link 2 Title" content=""/>
+      <meta name="text:Custom Link 3" content=""/>
+      <meta name="text:Custom Link 3 Title" content=""/>
+      <meta name="text:Custom Link 4" content=""/>
+      <meta name="text:Custom Link 4 Title" content=""/>
+      <meta name="text:Custom Link 5" content=""/>
+      <meta name="text:Custom Link 5 Title" content=""/>
+      <meta name="text:URL Flickr" content=""/>
+      <meta name="text:URL Vimeo" content=""/>
+      <meta name="text:URL Twitter" content=""/>
+      <meta name="text:URL Facebook" content=""/>
+      <meta name="text:URL Google Plus" content=""/>
+      <meta name="text:URL Pinterest" content=""/>
+      <meta name="text:URL Dribble" content=""/>
+      <meta name="text:URL Spotify" content=""/>
+      <meta name="text:URL Instagram" content=""/>
+      <meta name="text:URL Soundcloud" content=""/>
+      <meta name="text:URL Behance" content=""/>
+      <meta name="text:URL Linkedin" content=""/>
+      <meta name="text:URL Stumbleupon" content=""/>
+      <meta name="text:URL Github" content=""/>
+      <meta name="text:URL Youtube" content=""/>
+      {/block:hidden}
+      {block:ifhoverstyle2}
+      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source Sans Pro">
+      {/block:ifhoverstyle2}
+      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family={select:Body Font}:400,400italic,700,700italic">
+      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family={select:Title Font}:400,700">
+      <link href="http://static.tumblr.com/j6tha7z/4cro5p6ab/s.css" rel="stylesheet" type="text/css">
+      <style>body{font:12px/1.6em "{select:Body Font}", sans-serif;color:{color:Post Text};background:{color:background} url("{image:background}"){block:ifnotrepeatbackground} no-repeat center{/block:ifnotrepeatbackground} fixed;{block:ifnotrepeatbackground}background-size:cover{/block:ifnotrepeatbackground}}a,a:link,a:visited{text-decoration:none;color:{color:Links}}a:hover{color:{color:Links Hover}}h1,h2,h3,h4,h5{font:700 14px "{select:Title Font}", sans-serif;color:{color:Post Title}}blockquote{border:1px solid {color:Post Dividers}}#C{width:{block:iflimitcontainerwidth}{text:Limited Container Width}px{/block:iflimitcontainerwidth};100%;{block:ifnotcontentfitwidth}{block:ifcontentwidthBackground}background:rgba({RGBcolor:Post Text},.1){/block:ifcontentwidthBackground}{/block:ifnotcontentfitwidth}}#W h2.I-f-t{font:700 12px "{select:Title Font}";color:{color:Navigation Links}}#Q h1 a,#W h1 a{color:{color:Blog Title};{block:ifBlogTitleDecoration}padding:10px 20px;border:3px solid {color:Blog Title}{/block:ifBlogTitleDecoration}}#Q h1 a:hover,#W h1 a:hover{{block:ifnotBlogTitleDecoration}opacity:.6{block:ifnotBlogTitleDecoration}{block:ifBlogTitleDecoration}background:rgba({RGBcolor:Blog Title},.1){/block:ifBlogTitleDecoration}}#Q hr{background:{color:Dividers}}#W #D,#W #S,#W #N,#I{padding:25px 0;border-top:1px solid {color:Dividers}}#S{{block:ifURLTwitter}display:block;{/block:ifURLTwitter}{block:ifURLFacebook}display:block;{/block:ifURLFacebook}{block:ifURLVimeo}display:block;{block:ifURLVimeo}{block:ifURLFlickr}display:block;{/block:ifURLFlickr}{block:ifURLGooglePlus}display:block;{/block:ifURLGooglePlus}{block:ifURLYoutube}display:block;{/block:ifURLYoutube}{block:ifURLPinterest}display:block;{/block:ifURLPinterest}{block:ifURLLinkedin}display:block;{/block:ifURLLinkedin}{block:ifURLDribble}display:block;{/block:ifURLDribble}{block:ifURLStumbleupon}display:block;{/block:ifURLStumbleupon}{block:ifURLSpotify}display:block;{/block:ifURLSpotify}{block:ifURLInstagram}display:block;{/block:ifURLInstagram}{block:ifURLBehance}display:block;{/block:ifURLBehance}{block:ifURLGithub}display:block;{/block:ifURLGithub}{block:ifURLSoundcloud}display:block;{/block:ifURLSoundcloud}}#D,#D a{color:{color:Description}}#S a{color:{color:background}}#N li a{letter-spacing:1px;font:700 13px "{select:Title Font}";color:{color:Navigation links}}#N li a:hover{color:{color:Navigation Links Hover}}.X .photo a.G{background-image:-ms-linear-gradient(top,{color:Photo Gradient Top} 0%, {color:Photo Gradient Bottom} 100%) !important;background-image:-moz-linear-gradient(top, {color:Photo Gradient Top} 0%, {color:Photo Gradient Bottom} 100%) !important;background-image:-o-linear-gradient(top, {color:Photo Gradient Top} 0%, {color:Photo Gradient Bottom} 100%) !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, {color:Photo Gradient Top}), color-stop(1, {color:Photo Gradient Bottom})) !important;background-image:-webkit-linear-gradient(top, {color:Photo Gradient Top} 0%, {color:Photo Gradient Bottom} 100%) !important;background-image:linear-gradient(to bottom, {color:Photo Gradient Top} 0%, {color:Photo Gradient Bottom} 100%) !important}.X .photo:hover a.G{opacity:.{text:Photo Overlay Opacity}}.X .photo .h_1 a,.X .photo .h_2 a{background:rgba({RGBcolor:Photo Overlay Text},.2);box-shadow:inset 0 0 0 1px rgba({RGBcolor:Photo Overlay Text},.3)}.X .photo .h_1 a:hover,.X .photo .h_2 a:hover{box-shadow:inset 0 0 0 1px rgba({RGBcolor:Photo Overlay Text},.8)}.X .photo .h_1,.X .photo .h_1 a,.X .photo .h_2,.X .photo .h_2 a{color:{color:Photo Overlay Text}}.X a.link{text-transform:uppercase;font:700 13px "{select:Title Font}";color:{color:Post title}}.X .odd{background:rgba({RGBcolor:Post Text},.1)}.X a.link:after{content:"→";margin:0 0 0 20px}.X .Q,.X .D{border-bottom:1px solid {color:Post Dividers}}.X .D .D-B a{color:{color:Post Text};box-shadow:inset 0 0 0 1px rgba({RGBcolor:Post Text},.3)}.X .D .D-B a:hover{background:rgba({RGBcolor:Post Text},.1);box-shadow:inset 0 0 0 1px rgba({RGBcolor:Post Text},.6)}#P a{font:700 12px "{select:Title Font}",sans-serif;color:{color:Navigation Links};border:1px solid rgba({RGBcolor:Navigation Links},.2)}#P a:hover{background:rgba({RGBcolor:Navigation Links},.1);border:1px solid rgba({RGBcolor:Navigation Links},.4)}#p .p-b .p-i li{font:400 11px "{select:Title Font}";color:{color:Post Text};box-shadow:inset 0 0 0 1px rgba({RGBcolor:Post Text},.3)}#p .p-b .p-i li a{color:{color:Post Text}}#p .p-b ol.notes li.more_notes_link_container{border-top:1px solid {color:Dividers}}#p .p-b ol.notes li.more_notes_link_container,#p .p-b ol.notes li.more_notes_link_container a.more_notes_link{text-transform:uppercase;letter-spacing:1px;font:11px "{select:Title Font}";color:{color:Post Text}}{block:ifreversedlogofade}#W img,#Q img{opacity:.8}#W img:hover,#Q img:hover{opacity:1}{/block:ifreversedlogofade}#L{opacity:0}{block:ifsidebarfixed}#W-C{width:180px;position:fixed}#W{{block:ifsidebaralignedmiddle}top:50%{/block:ifsidebaralignedmiddle}}{block:ifsidebarfixed}#W{text-align:{select:Sidebar Text Aligned}}{block:ifsidebaratright}#W{float:right;margin:0 30px 0 0}.l-s #Z-C{margin:0 220px 0 0 !important}{/block:ifsidebaratright}{block:ifuppercaseblogtitle}#W h1,#Q h1{text-transform:uppercase}{/block:ifuppercaseblogtitle}{block:ifuppercasenavigationlinks}#N li a{text-transform:uppercase}{/block:ifuppercasenavigationlinks}{block:ifBlogTitleDecoration}#W h1{margin:0 0 50px}{/block:ifBlogTitleDecoration}{block:ifsocialicondecoration}#S a{background:transparent !important;color:{color:Description};box-shadow:0 0 0 1px rgba({RGBcolor:Description},.2)}#S a:hover{color:{color:Background};background:rgba({RGBcolor:Description},1) !important;box-shadow:0 0 0 1px rgba({RGBcolor:Description},1)}{/block:ifsocialicondecoration}{block:ifhidedescription}#D{display:none}{/block:ifhidedescription}{block:ifphotocaptions}.X .p-p{display:block}{/block:ifphotocaptions}{block:ifpostrounded}.X,.X img,.X a.G{border-radius:4px}{/block:ifpostrounded}{block:ifinfinitescrolling}#P{opacity:0 !important}{/block:ifinfinitescrolling}{CustomCSS}</style>
+   </head>
+   <body id="{block:indexpage}i{/block:indexpage}{block:permalinkpage}p{/block:permalinkpage}" class="{select:Layout}{block:ifinfinitescrolling} is{/block:ifinfinitescrolling}{block:ifsidebarfixed}{block:ifsidebaralignedmiddle} head_inner_center{block:ifsidebaralignedmiddle}{/block:ifsidebarfixed}" data-ig-id="{text:Instagram Feed ID}" data-ig-token="{text:Instagram Feed Access Token}">
+      <section id="C">
+         <header id="Q">
+            {block:iflogoimage}<a href="/"><img src="{image:Logo}" alt="{title}"/></a>{/block:iflogoimage}{block:ifnotlogoimage}
+            <h1><a href="/">{title}</a></h1>
+            {/block:ifnotlogoimage}
+            <nav id="S">{block:ifURLTwitter}<a href="{text:URL Twitter}" class="twitter" target="_blank">1</a>{/block:ifURLTwitter}{block:ifURLFacebook}<a href="{text:URL Facebook}" class="facebook" target="_blank">2</a>{/block:ifURLFacebook}{block:ifURLVimeo}<a href="{text:URL Vimeo}" class="vimeo" target="_blank">3</a>{block:ifURLVimeo}{block:ifURLFlickr}<a href="{text:URL Flickr}" class="flickr" target="_blank">4</a>{/block:ifURLFlickr}{block:ifURLGooglePlus}<a href="{text:URL Google Plus}" class="google" target="_blank">5</a>{/block:ifURLGooglePlus}{block:ifURLYoutube}<a href="{text:URL Youtube}" class="youtube" target="_blank">u</a>{/block:ifURLYoutube}{block:ifURLPinterest}<a href="{text:URL Pinterest}" class="pinterest" target="_blank">6</a>{/block:ifURLPinterest}{block:ifURLLinkedin}<a href="{text:URL Linkedin}" class="linkedin" target="_blank">7</a>{/block:ifURLLinkedin}{block:ifURLDribble}<a href="{text:URL Dribble}" class="dribble" target="_blank">8</a>{/block:ifURLDribble}{block:ifURLStumbleupon}<a href="{text:URL Stumbleupon}" class="stumbleupon" target="_blank">9</a>{/block:ifURLStumbleupon}{block:ifURLSpotify}<a href="{text:URL Spotify}" class="spotify" target="_blank">=</a>{/block:ifURLSpotify}{block:ifURLInstagram}<a href="{text:URL Instagram}" class="instagram" target="_blank">q</a>{/block:ifURLInstagram}{block:ifURLBehance}<a href="{text:URL Behance}" class="behance" target="_blank">e</a>{/block:ifURLBehance}{block:ifURLGithub}<a href="{text:URL Github}" class="github" target="_blank">r</a>{/block:ifURLGithub}{block:ifURLSoundcloud}<a href="{text:URL Soundcloud}" class="soundcloud" target="_blank">t</a>{/block:ifURLSoundcloud}</nav>
+            {block:description}
+            <div id="D">{description}</div>
+            {/block:description}
+            <nav id="N">
+               {block:AskEnabled}
+               <li><a href="/ask">{text:Ask Link Title}</a></li>
+               {/block:AskEnabled}{block:SubmissionsEnabled}
+               <li><a href="/submit">{text:Submit Link Title}</a></li>
+               {/block:SubmissionsEnabled}{block:ifshowarchivelink}
+               <li><a href="/archive">{text:Archive Link Title}</a></li>
+               {/block:ifshowarchivelink}{block:ifshowrandomlink}
+               <li><a href="/random">Random</a></li>
+               {/block:ifshowrandomlink}{block:ifshowrsslink}
+               <li><a href="{RSS}">RSS</a></li>
+               {/block:ifshowrsslink}{block:HasPages}{block:Pages}
+               <li><a href="{URL}" title="{Label}">{Label}</a></li>
+               {/block:Pages}{/block:HasPages}{block:ifCustomLink1Title}
+               <li><a href="{text:Custom Link 1}">{text:Custom Link 1 Title}</a></li>
+               {/block:ifCustomLink1Title}{block:ifCustomLink2Title}
+               <li><a href="{text:Custom Link 2}">{text:Custom Link 2 Title}</a></li>
+               {/block:ifCustomLink2Title}{block:ifCustomLink3Title}
+               <li><a href="{text:Custom Link 3}">{text:Custom Link 3 Title}</a></li>
+               {/block:ifCustomLink3Title}{block:ifCustomLink4Title}
+               <li><a href="{text:Custom Link 4}">{text:Custom Link 4 Title}</a></li>
+               {/block:ifCustomLink4Title}{block:ifCustomLink5Title}
+               <li><a href="{text:Custom Link 5}">{text:Custom Link 5 Title}</a></li>
+               {/block:ifCustomLink5Title}{block:ifshowcredit}
+               <li id="zt"><a href="http://goo.gl/dvOeur">Theme</a></li>
+               {/block:ifshowcredit}
+            </nav>
+            <hr>
+         </header>
+         <aside id="W">
+            <div id="W-C">
+               {block:iflogoimage}<a href="/"><img src="{image:Logo}" alt="{title}"/></a>{/block:iflogoimage}{block:ifnotlogoimage}
+               <h1><a href="/">{title}</a></h1>
+               {/block:ifnotlogoimage}{block:description}
+               <div id="D">{description}</div>
+               {/block:description}
+               <nav id="N">
+                  {block:AskEnabled}
+                  <li><a href="/ask">{text:Ask Link Title}</a></li>
+                  {/block:AskEnabled}{block:SubmissionsEnabled}
+                  <li><a href="/submit">{text:Submit Link Title}</a></li>
+                  {/block:SubmissionsEnabled}{block:ifshowarchivelink}
+                  <li><a href="/archive">{text:Archive Link Title}</a></li>
+                  {/block:ifshowarchivelink}{block:ifshowrandomlink}
+                  <li><a href="/random">Random</a></li>
+                  {/block:ifshowrandomlink}{block:ifshowrsslink}
+                  <li><a href="{RSS}">RSS</a></li>
+                  {/block:ifshowrsslink}{block:Pages}
+                  <li><a href="{URL}" title="{Label}">{Label}</a></li>
+                  {/block:Pages}{block:ifCustomLink1Title}
+                  <li><a href="{text:Custom Link 1}">{text:Custom Link 1 Title}</a></li>
+                  {/block:ifCustomLink1Title}{block:ifCustomLink2Title}
+                  <li><a href="{text:Custom Link 2}">{text:Custom Link 2 Title}</a></li>
+                  {/block:ifCustomLink2Title}{block:ifCustomLink3Title}
+                  <li><a href="{text:Custom Link 3}">{text:Custom Link 3 Title}</a></li>
+                  {/block:ifCustomLink3Title}{block:ifCustomLink4Title}
+                  <li><a href="{text:Custom Link 4}">{text:Custom Link 4 Title}</a></li>
+                  {/block:ifCustomLink4Title}{block:ifCustomLink5Title}
+                  <li><a href="{text:Custom Link 5}">{text:Custom Link 5 Title}</a></li>
+                  {/block:ifCustomLink5Title}{block:ifshowthemelink}
+                  <li><a href="http://goo.gl/dvOeur">Theme</a></li>
+                  {/block:ifshowthemelink}
+               </nav>
+               <nav id="S">{block:ifURLTwitter}<a href="{text:URL Twitter}" class="twitter" target="_blank">1</a>{/block:ifURLTwitter}{block:ifURLFacebook}<a href="{text:URL Facebook}" class="facebook" target="_blank">2</a>{/block:ifURLFacebook}{block:ifURLVimeo}<a href="{text:URL Vimeo}" class="vimeo" target="_blank">3</a>{block:ifURLVimeo}{block:ifURLFlickr}<a href="{text:URL Flickr}" class="flickr" target="_blank">4</a>{/block:ifURLFlickr}{block:ifURLGooglePlus}<a href="{text:URL Google Plus}" class="google" target="_blank">5</a>{/block:ifURLGooglePlus}{block:ifURLYoutube}<a href="{text:URL Youtube}" class="youtube" target="_blank">u</a>{/block:ifURLYoutube}{block:ifURLPinterest}<a href="{text:URL Pinterest}" class="pinterest" target="_blank">6</a>{/block:ifURLPinterest}{block:ifURLLinkedin}<a href="{text:URL Linkedin}" class="linkedin" target="_blank">7</a>{/block:ifURLLinkedin}{block:ifURLDribble}<a href="{text:URL Dribble}" class="dribble" target="_blank">8</a>{/block:ifURLDribble}{block:ifURLStumbleupon}<a href="{text:URL Stumbleupon}" class="stumbleupon" target="_blank">9</a>{/block:ifURLStumbleupon}{block:ifURLSpotify}<a href="{text:URL Spotify}" class="spotify" target="_blank">=</a>{/block:ifURLSpotify}{block:ifURLInstagram}<a href="{text:URL Instagram}" class="instagram" target="_blank">q</a>{/block:ifURLInstagram}{block:ifURLBehance}<a href="{text:URL Behance}" class="behance" target="_blank">e</a>{/block:ifURLBehance}{block:ifURLGithub}<a href="{text:URL Github}" class="github" target="_blank">r</a>{/block:ifURLGithub}{block:ifURLSoundcloud}<a href="{text:URL Soundcloud}" class="soundcloud" target="_blank">t</a>{/block:ifURLSoundcloud}</nav>
+               {block:ifinstagramfeedid}
+               <div id="I">
+                  {block:ifinstagramfeedtitle}
+                  <h2 class="I-f-t">{text:Instagram Feed Title}</h2>
+                  {/block:ifinstagramfeedtitle}
+                  <ul id="I_F_S" class="I-F"></ul>
+               </div>
+               {/block:ifinstagramfeedid}
+            </div>
+         </aside>
+         <div id="Z-C">
+         {block:ifshowtotopbutton}
+         <div id="TT"></div>
+         {/block:ifshowtotopbutton}
+         <div id="Z" class="{select:Post Width} {select:Post Margin}">
+            {block:indexpage}{block:ifinstagramfeedid}
+            <div id="post-info">
+               <div id="I">
+                  {block:ifinstagramfeedtitle}
+                  <h2 class="I-f-t">{text:Instagram Feed Title}</h2>
+                  {/block:ifinstagramfeedtitle}
+                  <ul id="I_F_H" class="I-F"></ul>
+               </div>
+            </div>
+            {/block:ifinstagramfeedid}{/block:indexpage}
+            {block:Posts}
+            <article id="{PostID}" class="X">
+               {block:Answer}
+               <div class="Q">
+                  <h3>{Question}</h3>
+                  <div class="S"><i>A question by {Asker}</i></div>
+               </div>
+               {answer}{/block:Answer}{block:Chat}{block:Title}
+               <h2>{Title}</h2>
+               {/block:Title}{block:Lines}
+               <div class="{Alt} user_{UserNumber}">{block:Label}<b>{Label}</b>{/block:Label} {Line}</div>
+               {/block:Lines}{/block:Chat}{block:Link}<a class="link" href="{URL}">{Name}</a>{block:Description}{Description}{/block:Description}{/block:Link}{block:Text}{block:Title}
+               <h2>{Title}</h2>
+               {/block:Title}{Body}{/block:Text}{block:Quote}
+               <div class="quote">
+                  <h3>“ {Quote} ”</h3>
+                  <div class="source">—    {Source}</div>
+                  {/block:Quote}{block:Photo}
+                  <div class="photo">
+                     {block:indexpage}<a class="G" href="{permalink}"></a>{block:ifnothoverstyle2}{block:ifhoverstyle1}
+                     <div class="h_1"><span class="lightbox"><a href="{PhotoURL-HighRes}">j</a></span><a href="{permalink}">v</a><a href="{ReblogURL}" target="_blank">c</a><a>z{LikeButton size="10"}</a></div>
+                     {/block:ifhoverstyle1}{/block:ifnothoverstyle2}{block:ifhoverstyle2}
+                     <div class="h_2"><a href="{permalink}">Permalink</a><a href="{ReblogURL}" target="_blank">Reblog</a><a href="{permalink}">{NoteCountWithlabel}</a><a href="{permalink}">{Timeago}</a></div>
+                     {/block:ifhoverstyle2}<img src="{PhotoURL-500}"alt="{PhotoAlt}">{/block:indexpage}{block:permalinkpage}{LinkOpenTag}<img src="{PhotoURL-HighRes}"alt="{PhotoAlt}">{LinkCloseTag}{/block:permalinkpage}
+                  </div>
+                  {/block:Photo}{block:Photoset}{block:indexpage}
+                  <div class="photoset-grid" data-layout="{PhotosetLayout}" data-id="photoset{PostID}">{block:Photos}<img src="{PhotoURL-HighRes}"{block:HighRes}data-highres="{PhotoURL-HighRes}"{/block:HighRes}{block:Caption}alt="{Caption}"{/block:caption}/>{/block:Photos}</div>
+                  {/block:indexpage}{block:permalinkpage}{Photoset}{/block:permalinkpage}{/block:Photoset}{block:Audio}
+                  <div class="media">{block:IndexPage}{AudioEmbed-400}{/block:IndexPage}{block:permalinkpage}{AudioEmbed-640}{/block:permalinkpage}</div>
+                  {/block:Audio}{block:Video}
+                  <div class="media">{block:IndexPage}{VideoEmbed-400}{/block:IndexPage}{block:permalinkpage}{VideoEmbed-700}{/block:permalinkpage}</div>
+                  {/block:Video}{block:Date}
+                  <div class="{block:Photo}{block:indexpage}p-{/block:indexpage}{block:permalinkpage}{/block:permalinkpage}p{/block:Photo}">
+                     {block:Caption}
+                     <div class="captions">{Caption}</div>
+                     {/block:Caption}
+                     <div class="D">
+                        {block:indexpage}
+                        <div class="D-B"><a href="{permalink}">v</a><a href="{ReblogURL}" target="_blank">c</a><a>z{LikeButton size="8"}</a></div>
+                        {/block:indexpage}
+                     </div>
+                  </div>
+                  {block:PermalinkPage}
+                  <div class="p-b">
+                     <div class="p-i">
+                        <li>{NoteCountWithLabel}</li>
+                        <li>{Timeago}</li>
+                        <li>{ShortMonth} {DayOfMonthWithZero}, {Year}</li>
+                        {block:ContentSource}
+                        <li><a href="{SourceURL}">Source</a></li>
+                        {/block:ContentSource}
+                     </div>
+                     {block:ifnotHidepostnotes}{block:PostNotes}{PostNotes}{/block:PostNotes}{/block:ifnotHidepostnotes}
+                  </div>
+                  {/block:PermalinkPage}{/block:Date}
+            </article>
+            {/block:Posts}
+            </div>
+            {block:Pagination}
+            <div id="P">{block:PreviousPage}<a href="{PreviousPage}" id="newer"><span>,</span> Newer</a>{/block:PreviousPage}{block:NextPage}<a href="{NextPage}" id="older">Older <span>.</span></a>{/block:NextPage}</div>
+            {/block:Pagination}
+         </div>
+      </section>
+      <script src="//code.jquery.com/jquery-1.11.2.min.js"></script><script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script><script type="text/javascript" src="http://static.tumblr.com/j6tha7z/FR9o6y0e0/s.js"></script>
+   </body>
+</html>
